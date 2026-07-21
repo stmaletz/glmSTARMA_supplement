@@ -1,5 +1,5 @@
 This repository contains additional code to reproduce the results from the article:
-- Maletz, S., Fokianos, K., & Fried, R. (2026). glmSTARMA -- An R-Package for fitting autoregressive spatio-temporal models following generalized linear models. DOI: [10.48550/arXiv.2607.08276](doi.org/10.48550/arXiv.2607.08276)
+- Maletz, S., Fokianos, K., & Fried, R. (2026). glmSTARMA -- An R-Package for fitting autoregressive spatio-temporal models following generalized linear models. [DOI: 10.48550/arXiv.2607.08276](https://doi.org/10.48550/arXiv.2607.08276)
 
 Files are as follows:
 - `glmstarma_supp.R` contains the R-Code to reproduce the results/figures/tables from the main part and the appendix (excluding simulations)
