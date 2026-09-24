@@ -834,7 +834,7 @@ mean_INGARCH_GARCH_poisson <- ggplot(
   )
 
 
-qq_mean_INGARCH_GARCH_poisson <- ggplot(subset(params_long_2, distribution == "vquasipoisson" & type == "varying" & obs == 1000), 
+qq_mean_INGARCH_GARCH_poisson <- ggplot(subset(params_long_2, distribution == "vquasipoisson" & type == "varying" & obs == 500), 
        aes(sample = value)) +
   stat_qq() +
   stat_qq_line(color = "red") +
@@ -899,7 +899,7 @@ dispersion_INGARCH_GARCH_poisson <- ggplot(
     legend.text = element_text(size = legend_txt)
   )
 
-qq_dispersion_INGARCH_GARCH_poisson <- ggplot(subset(params_dispersion_long_2, distribution == "vquasipoisson" & obs == 100), 
+qq_dispersion_INGARCH_GARCH_poisson <- ggplot(subset(params_dispersion_long_2, distribution == "vquasipoisson" & obs == 500), 
        aes(sample = value)) +
   stat_qq() +
   stat_qq_line(color = "red") +

@@ -266,6 +266,10 @@ gnar_fit <- GNARXfit(vts = t(SST), net = sst_net, globalalpha = TRUE,
 toc()
 summary(gnar_fit)
 
+# The error message can be ignored an is caused by the BIC implementation of
+# the GNAR package. It is caused because there are more locations than 
+# time-points.
+
 
 
 #################################################################
@@ -454,8 +458,8 @@ sim <- dglmstarma.sim(
 
 ### Code for Table 5
 
-res_1_0 <- readRDS("constant_dispersion_mean_without_feedback.rds")
-res_1_1 <- readRDS("constant_dispersion_mean_with_feedback.rds")
+res_1_0 <- readRDS("summarized_results/constant_dispersion_mean_without_feedback.rds")
+res_1_1 <- readRDS("summarized_results/constant_dispersion_mean_with_feedback.rds")
 res_1_0 <- subset(res_1_0, copula == "frank" & dim == 10)
 res_1_1 <- subset(res_1_1, copula == "frank" & dim == 10)
 
